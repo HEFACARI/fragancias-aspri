@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "nombre": "Fragancia 1",
+        "tipo": "mujer",
+        "precio": 150.000,
+        "url": "https://images.unsplash.com/photo-1458538977777-0549b2370168?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJhZ2FuY2lhc3xlbnwwfHwwfHx8MA%3D%3D"
+        
+    },
+    {
+        "id": 2,
+        "nombre": "Fragancia 2",
+        "tipo": "mujer",
+        "precio": 150.000,
+        "url": "https://images.unsplash.com/photo-1547887537-6158d64c35b3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 3,
+        "nombre": "Fragancia 3",
+        "tipo": "hombre",
+        "precio": 150.000,
+        "url": "https://images.unsplash.com/photo-1681935703733-5e9df028a318?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 4,
+        "nombre": "Fragancia 4",
+        "tipo": "hombre",
+        "precio": 150.000,
+        "url": "https://images.unsplash.com/photo-1708979165880-dd0ff61fa748?q=80&w=732&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+]
