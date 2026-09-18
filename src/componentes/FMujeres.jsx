@@ -8,30 +8,7 @@ import {motion} from "framer-motion"
 import { Context } from "../Context"
 
 const fraganciasMujeres = [
-  {
-    id:5,
-    img: afeef,
-    nombre: "LATTAFA AFEEF",
-    precio: 200000
-  },
-  {
-    id:6,
-    img: ariana,
-    nombre: "ARIANA GRANDE CLOUD",
-    precio: 250000
-  },
-  {
-    id: 7,
-    img: clubWomen,
-    nombre: "CLUB DE NUIT WOMEN",
-    precio: 170000
-  },
-  {
-    id:8,
-    img: yaraRosada,
-    nombre: "LATTAFA YARA ROSADA",
-    precio: 150000
-  }
+
 ]
 
 const FMujeres = () => {
