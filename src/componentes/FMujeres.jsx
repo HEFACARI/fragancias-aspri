@@ -7,6 +7,7 @@ import { slideUp } from '../utility/animation'
 import {motion} from "framer-motion"
 import { Context } from "../Context"
 import { supabase } from "../supabaseClient"
+import { useState } from "react"
 
 const FMujeres = () => {
 
