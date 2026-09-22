@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import afeef from "../assets/img/afeef.png"
 import ariana from "../assets/img/ariana-grande-cloud.png"
 import clubWomen from "../assets/img/club-de-nuit-women.png"
@@ -6,13 +6,30 @@ import yaraRosada from "../assets/img/yara-rosada.png"
 import { slideUp } from '../utility/animation'
 import {motion} from "framer-motion"
 import { Context } from "../Context"
-
-const fraganciasMujeres = [
-
-]
+import { supabase } from "../supabaseClient"
 
 const FMujeres = () => {
 
+  const [fragancias, setFragancias] = useState([])
+
+  useEffect(() => {
+    const obtenerFragancias = async() => {
+      const {data, error} = await supabase
+      .from("fragancias")
+      .select("*")
+      .eq("categoria", "mujer")
+
+      if(error){
+        console.log("error")
+      }
+
+      setFragancias(data)
+    }
+
+    obtenerFragancias()
+  }, [])
+    
+  /*AÑADIR FRAGANCIAS AL CARRITO */
   const buyFra = (fra) => {
 
     const productoExistente = cart.find((producto) => producto.id === fra.id)
@@ -35,7 +52,7 @@ const FMujeres = () => {
 
   return (
     <motion.div className='grid grid-cols-2 bg-gray-400 md:grid-cols-4 text-center px-5 py-5 gap-5 max-w-6xl mx-auto mt-5' variants={slideUp(0.3)} initial="initial" animate="animate">
-      {fraganciasMujeres.map((fra)=>(
+      {fragancias.map((fra)=>(
         <div key={fra.id} className='bg-white'>
           <img src={fra.img} className='w-full h-64 object-cover'/>
           <h3>{fra.nombre}</h3>

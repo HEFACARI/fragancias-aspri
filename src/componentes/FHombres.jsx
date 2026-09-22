@@ -41,7 +41,7 @@ const FHombres = () => {
   const [fragancias, setFragancias] = useState([])
 
   useEffect(() => {
-    const obtenerFragancias = async ()=> {
+    const obtenerFragancias = async () => {
       const {data, error} = await supabase
       .from('fragancias')
       .select('*')
